@@ -1,0 +1,121 @@
+body{
+  width: 42%;
+  background-position: 65% -20%;
+}
+
+.header{
+  text-align: center; */
+      float: left;
+      display: inline-block;
+      /* padding: 8% 8%; */
+      margin: 4% 13% 0% 10%;
+      position: relative;
+      left: -59%;
+      /* top: 14%; */
+}
+
+.header2{
+  text-align: center;
+  float: right;
+  padding: 1% 5%;
+  margin: -4% 12% 2% 0%;
+  position: relative;
+  display: inline-block;
+  right: -65%;
+}
+
+.background-block{
+  background-color: rgba(255,250,250,0.2);
+  height: 90px;
+  position: absolute;
+  width: 100%;
+  top: 205px;
+  left: 0px;
+}
+
+a{
+  text-decoration:none;
+  color:rgb(92, 58, 65);
+}
+
+.background_image{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  left: -5%;
+  top: 0%;
+  margin: -11% 0%;
+  background-size: 300px 100px;
+
+}
+
+.Hipster_Logo{
+  position: relative;
+  left: 73%;
+  top: 45px;
+  display: inline-block;
+}
+
+.Logo{
+    position: relative;
+    display: inline;
+    left:-8%;
+  }
+
+.Lo{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: -40px;
+}
+
+.LogoWords{
+    position: relative;
+    left: -29%;
+    top: 24px;
+    display: inline-block;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 20px;
+  }
+
+  .Name_Form1{
+    position:relative;
+    left: 32px;
+    top: -215px;
+    display: inline-block;
+  }
+
+  .Name_Form2{
+    position: relative;
+    left: 225px;
+    top: -19px;
+    display: inline-block;
+  }
+
+#modal{
+    background-color: rgba(250, 250, 250, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .modal_words{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background-color: rgba(250,250,250,0.8);
+    width: 100%;
+    top: 250px;
+    height: 150px;
+    margin: 35px 0px 30px -131px;
+    padding: 70px
+  }
+
+#closeButton{
+    position: relative;
+    top: 120px;
+    left: 20px;
+  }

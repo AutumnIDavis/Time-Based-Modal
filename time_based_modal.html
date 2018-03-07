@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="/Users/foreverautumn/Desktop/WebDevelopment/Month 1/Week 2/Day 2/time_based_modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+  <body background= "/Users/foreverautumn/Desktop/WebDevelopment/Month 1/Week 2/Day 2/images/hiptster.jpg">
+
+      <div class="Hipster_Logo">
+        <div class="Lo">
+          <div class="Logo">
+            <img src="/Users/foreverautumn/Desktop/WebDevelopment/Month 1/Week 2/Day 2/images/Logo.png" style="width: 15%;" alt="glasses">
+          </div>
+
+          <div class="LogoWords">
+            <h2>Word-Ception</h2>
+          </div>
+        </div>
+
+          <div class="header">
+              <a href="#">Who Are We?</a>
+          </div>
+          <div class="header">
+              <a href="#">What Do We Do?</a>
+          </div>
+
+          <div class="header2">
+              <a href="#">How Can You Join?</a>
+          </div>
+          <div class="header2">
+              <a href="#">How Can You Help?</a>
+          </div>
+        </div>
+
+        <div class="background-block"></div>
+
+        <div class="Name_Form1">
+          <form>
+              Username:
+               <input type="text" name="firstname">
+          </form>
+         <div class="Name_Form2">
+               <form>
+                   Password:
+                   <input type="text" name="lastname">
+                   <button class="trigger">Log In</button>
+              </form>
+            </div>
+
+         </div>
+
+
+    <!-- Below is the Modal -->
+
+        <!-- Define ID and make it hidden -->
+                 <div id="modal" style="visibility: hidden">
+                    <div class="modal_words"><h1>Please Log-in</h1></div>
+                      <!-- Here is the Button -->
+                        <div id="closeButton">
+                            <button>Close</button>
+                        </div>
+                 </div>
+
+
+
+        <!-- Create a function that calls that ID and turns it visible -->
+              <script type="text/javascript">
+                function login() {
+                    document.getElementById("modal").style.visibility = "visible";
+              }
+        //Set the time so that it turns visible after 3 seconds
+                setTimeout("login()", 3000);
+              </script>
+
+              <!--Use the button to close the Modal-->
+
+              <script>
+                   function closeMod(){
+                       document.getElementById("closeButton").onclick = {
+                          document.getElementById("modal") style="display:none";
+                       }
+                   }
+              </script>
+
+
+
+  </body>
