@@ -1,19 +1,25 @@
 <!DOCTYPE html>
   <head>
-    <link rel="stylesheet" href="/Users/foreverautumn/Desktop/WebDevelopment/Month 1/Week 2/Day 2/time_based_modal.css">
+    <link rel="stylesheet" href="/Users/foreverautumn/Desktop/WebDevelopment/Projects/time_based_modal/time_based_modal.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
 
-  <body background= "/Users/foreverautumn/Desktop/WebDevelopment/Month 1/Week 2/Day 2/images/hiptster.jpg">
+  <body background= "/Users/foreverautumn/Desktop/WebDevelopment/Projects/time_based_modal/images/1_S1cZtX37TUoGL8lFUJvwHA.jpeg">
+
+<!--
+      <body background= "/Users/foreverautumn/Desktop/WebDevelopment/Projects/time_based_modal/images/hiptster.jpg">
+-->
 
       <div class="Hipster_Logo">
         <div class="Lo">
           <div class="Logo">
             <img src="/Users/foreverautumn/Desktop/WebDevelopment/Month 1/Week 2/Day 2/images/Logo.png" style="width: 15%;" alt="glasses">
           </div>
+
+
 
           <div class="LogoWords">
             <h2>Word-Ception</h2>
@@ -35,6 +41,7 @@
           </div>
         </div>
 
+
         <div class="background-block"></div>
 
         <div class="Name_Form1">
@@ -45,7 +52,7 @@
          <div class="Name_Form2">
                <form>
                    Password:
-                   <input type="text" name="lastname">
+                   <input type="password" name="lastname">
                    <button class="trigger">Log In</button>
               </form>
             </div>
@@ -59,32 +66,44 @@
                  <div id="modal" style="visibility: hidden">
                     <div class="modal_words"><h1>Please Log-in</h1></div>
                       <!-- Here is the Button -->
-                        <div id="closeButton">
-                            <button>Close</button>
-                        </div>
+                      <div id="closeButton">
+                          <button>Close</button>
+                      </div>
+
+                      <button id="close" onclick="closeMod()">
+
                  </div>
 
+                 <script>
+                 //Create a function that calls that ID and turns it visible
+                         function login() {
+                             document.getElementById("modal").style.visibility = "visible";
+                             }
+                 //Set the time so that it turns visible after 3 seconds
+                          setTimeout("login()", 3000);
 
 
-        <!-- Create a function that calls that ID and turns it visible -->
-              <script type="text/javascript">
-                function login() {
-                    document.getElementById("modal").style.visibility = "visible";
-              }
-        //Set the time so that it turns visible after 3 seconds
-                setTimeout("login()", 3000);
-              </script>
+                        function closeMod(){
+                          document.getElementById("closeButton").onclick =
+                          function closer(){
+                             document.getElementById("modal").style.visibility='hidden';
+                              }
+                              }
+                        closeMod();
+                        console.log (closeMod)
 
-              <!--Use the button to close the Modal-->
+                </script>
 
-              <script>
-                   function closeMod(){
-                       document.getElementById("closeButton").onclick = {
-                          document.getElementById("modal") style="display:none";
-                       }
-                   }
-              </script>
+                <div class="social1">
+                    <img src="/Users/foreverautumn/Desktop/WebDevelopment/Projects/time_based_modal/images/social-media copy.png" alt="social">
+                </div>
 
+                <div class="social2">
+                    <img src="/Users/foreverautumn/Desktop/WebDevelopment/Projects/time_based_modal/images/social-media.png" alt="social">
+                </div>
 
+                <footer>
+                  <hr>
 
+                </foorer>
   </body>
